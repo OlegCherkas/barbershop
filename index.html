@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-		   <a href="#"><img src="" alt="borodinskiy"></a>
+		   <a href="#"><img src="image/index-logo.svg" width="371px" height="155px" alt="Логотип «БОРОДИНСКИЙ»"></a>
 		   <ul>
 		   	    <li><a href="">ИНФОРМАЦИЯ</a></li>
 		   	    <li><a href="">НОВОСТИ</a></li>
@@ -24,22 +24,26 @@
 	<main>
 		<h1>Бородинский</h1>
 		<section>
-			<div>
-				<h2>БЫСТРО</h2>
-				<p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТРИЖКИ-МИНУТКИ!</p>
-			</div>
-			<div>
-				<h2>КРУТО</h2>
-				<p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
-			</div>
-			<div>
-				<h2>ДОРОГО</h2>
-				<p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО, К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
-			</div>
+			<h2 class="visually-hidden">Преимущества</h2>
+			<ul>
+				<li>
+				    <h3>БЫСТРО</h3>
+				    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТРИЖКИ-МИНУТКИ!</p>
+			    </li>
+			    <li>
+				    <h3>КРУТО</h3>
+				    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+			    </li>
+			    <li>
+				    <h3>ДОРОГО</h3>
+				    <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО, К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+			    </li>				
+			    </ul>
+			
 		</section>
 		<div>
 			<section>
-				<h2>НОВОСТИ</h2>
+				<h3>НОВОСТИ</h3>
 				<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
 				<time>11 января</time>
 				<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
@@ -48,9 +52,9 @@
 			</section>
 			<section>
 				<h2>ФОТОГАЛЕРЕЯ</h2>
-				<a href=""><img src="image/studio.jpg" width="286" height="164" alt="photo-gallery"></a>
-				<span>НАЗАД</span>
-				<span>ВПЕРЕД</span>
+				<a href=""><img src="image/studio.jpg" width="286" height="164" alt="ФОТОГАЛЕРЕЯ"></a>
+				<button>НАЗАД</button>
+				<button>ВПЕРЕД</button>
 			</section>
 		</div>
 		<div>
@@ -71,7 +75,31 @@
 			</section>
 			<section>
 				<h2>ЗАПИСАТЬСЯ</h2>
-				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>				
+				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+
+				<form action="" method="post">
+					<fieldset>
+
+						<label>
+							Дата
+							<input type="date" name="" placeholder="01.11.2019">
+						</label>
+						<label>
+							Время
+							<input type="time" name="" placeholder="09:42">
+						</label>
+						<label>
+							Ваше имя
+							<input type="text" name="" placeholder="boroda">
+						</label>
+						<label>
+							Телефон
+							<input type="phone" name="" placeholder="+3 123-456-78-90">
+						</label>
+						<button>Отправить</button>
+					</fieldset>
+				</form>
+
 			</section>
 		</div>
 	</main>
@@ -85,9 +113,9 @@
 		<div>
 			<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
 			<ul>
-				<li><a href=""><img src="" alt="vk-logo"></a></li>
-				<li><a href=""><img src="" alt="facebook-logo"></a></li>
-				<li><a href=""><img src="" alt="instagram-logo"></a></li>
+				<li><a href=""><img src="image/vk.svg" alt="Вконтакте"></a></li>
+				<li><a href=""><img src="image/facebook.svg" alt="Фейсбук"></a></li>
+				<li><a href=""><img src="image/instagram.svg" alt="Инстаграмм"></a></li>
 			</ul>
 		</div>
 		<div>
@@ -96,11 +124,31 @@
 		</div>
 	</footer>
 	<section>
-		<div>x</div>
-		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-	</section>
-	<section>
-		<div>x</div>
-	</section>
+		<form action="" method="post"> 
+		    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>	
+				<fieldset>
+				   <legend>Введите пожалуйста свой логин и пароль</legend>
+
+				      <label>
+				         Логин
+				         <input type="text" name="login" placeholder="ЛОГИН">
+				      </label>
+
+				      <label>
+				         Пароль
+				          <input type="password" name="password" placeholder="ПАРОЛЬ">
+				      </label>
+
+				      <label>
+				          <input type="checkbox" name="remember-me">
+				          Запомните меня
+				      </label>
+				   <a href="#">Я забыл пароль!</a>	
+				   <button>Войти</button>
+				   <button>x</button>		    	
+				</fieldset>				
+		</form>		
+	</section>	
 </body>
 </html>
+

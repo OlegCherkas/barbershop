@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-		   <a href="index.html"><img src="" alt="borodinskiy"></a>
+		   <a href="index.html"><img src="image/logo-2.svg" alt="логотип «БОРОДИНСКИЙ»"></a>
 		   <ul>
 		   	    <li><a href="">ИНФОРМАЦИЯ</a></li>
 		   	    <li><a href="">НОВОСТИ</a></li>
@@ -24,7 +24,7 @@
 	<main>
 		<h1>набор для путешествий «Baxter of California»</h1>
 		<ul>
-			<li><a href="">ГЛАВНАЯ</a></li>
+			<li><a href="index.html">ГЛАВНАЯ</a></li>
 			<li><a href="index-price.html">МАГАЗИН</a></li>
 			<li><a href="">СРЕДСТВА ДЛЯ УХОДА</a></li>
 			<li><a href="#">набор для путешествий «Baxter of California»</a></li>
@@ -33,12 +33,12 @@
 		<section>
 		     <h2>Изображения товара</h2>
 		     <p>
-			     <img src="" alt="Большое фото товара">
+			     <img src="image/item-big.jpg" alt="Большое фото товара">
 		     </p>
 		     <ul>			
-			     <li><a href=""><img src="" alt="Профиль товара"></a></li>
-			     <li><a href=""><img src="" alt="Фото сумки"></a></li>
-			     <li><a href=""><img src="" alt="Маленькое фото товара"></a></li>
+			     <li><a href=""><img src="image/item-small-1.jpg" alt="Профиль товара"></a></li>
+			     <li><a href=""><img src="image/item-small-2.jpg" alt="Фото сумки"></a></li>
+			     <li><a href=""><img src="image/item-small-3.jpg" alt="Маленькое фото товара"></a></li>
 		     </ul>
 		</section>
 
@@ -80,9 +80,9 @@
 		<div>
 			<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
 			<ul>
-				<li><a href=""><img src="" alt="vk-logo"></a></li>
-				<li><a href=""><img src="" alt="facebook-logo"></a></li>
-				<li><a href=""><img src="" alt="instagram-logo"></a></li>
+				<li><a href=""><img src="image/vk.svg" alt="Вконтакте"></a></li>
+				<li><a href=""><img src="image/facebook.svg" alt="Фейсбук"></a></li>
+				<li><a href=""><img src="image/instagram.svg" alt="Инстаграмм"></a></li>			
 			</ul>
 		</div>
 		<div>
@@ -91,11 +91,31 @@
 		</div>
 	</footer>
 	<section>
-		<div>x</div>
-		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+		<form action="" method="post"> 
+		    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>	
+				<fieldset>
+				   <legend>Введите пожалуйста свой логин и пароль</legend>
+
+				      <label>
+				         Логин
+				         <input type="text" name="login" placeholder="ЛОГИН">
+				      </label>
+
+				      <label>
+				         Пароль
+				          <input type="password" name="password" placeholder="ПАРОЛЬ">
+				      </label>
+
+				      <label>
+				          <input type="checkbox" name="remember-me">
+				          Запомните меня
+				      </label>
+				   <a href="#">Я забыл пароль!</a>	
+				   <button>Войти</button>	
+				   <button aria-label="закрыть">x</button>		    	
+				</fieldset>				
+		</form>		
 	</section>
-	<section>
-		<div>x</div>
-	</section>
+	
 </body>
 </html>

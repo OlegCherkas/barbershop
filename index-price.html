@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-		   <a href="index.html"><img src="" alt="borodinskiy"></a>
+		   <a href="index.html"><img src="image/logo-2.svg" alt="Логотип «БОРОДИНСКИЙ»"></a>
 		   <ul>
 		   	    <li><a href="">ИНФОРМАЦИЯ</a></li>
 		   	    <li><a href="">НОВОСТИ</a></li>
@@ -29,7 +29,55 @@
 			<li>СРЕДСТВА ДЛЯ УХОДА</li>
 		</ul>
 		<aside>
-			
+			<form action="" method="post">
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li>							
+				            <input type="checkbox" name="baxter" id="baxter-of-california" checked>
+				            <label for="baxter-of-california">Baxter of California</label>	
+						</li>
+						<li>
+							<input type="checkbox" name="natty" id="mr-natty">
+							<label for="mr-natty">Mr Natty</label>
+						</li>
+						<li>
+							<input type="checkbox" name="suavecito" id="suavecito" checked>
+							<label for="suavecito">Suavecito</label>
+						</li>
+						<li>
+							<input type="checkbox" name="malin" id="malin-goetz">
+							<label for="malin-goetz">Malin+Goetz</label>
+						</li>
+						<li>
+							<input type="checkbox" name="murray" id="murray-s">
+							<label for="murray-s">Murray’s</label>
+						</li>
+						<li>
+							<input type="checkbox" name="american" id="american-crew" checked>
+							<label for="american-crew">American Crew</label>
+						</li>
+					</ul>				    			
+				</fieldset>
+				<fieldset>
+					<legend>ГРУППЫ ТОВАРОВ:</legend>
+					<ul>
+						<li>
+							<input type="radio" name="product-group" value="shaving" id="shaving-items">
+							<label for="shaving-items">Бритвенные принадлежности</label>
+						</li>
+						<li>
+							<input type="radio" name="product-group" value="care" id="item-for-care" checked>
+							<label for="item-for-care">Средства для ухода</label>
+						</li>
+						<li>
+							<input type="radio" name="product-group" value="accessories" id="accessories">
+							<label for="accessories">Аксессуары</label>
+						</li>
+					</ul>
+				</fieldset>
+                <button type="submit">Показать</button>
+			</form>
 		</aside>
 		<section>
 			<ul>
@@ -40,8 +88,8 @@
 						   <span>«Baxter of California»</span>
 						</a>
 						<p>
-						  <a href="">
-							<img src="" alt="Набор для путешествий «Baxter of California»">
+						  <a href="index-set-for-travel.html">
+							<img src="image/item-shop-1.jpg" alt="Набор для путешествий «Baxter of California»">
 						  </a>
 						</p>
 						<p>
@@ -59,7 +107,7 @@
 						</a>
 						<p>
 						  <a href="">
-							<img src="" alt="Увлажняющий кондиционер «Baxter of California»">
+							<img src="image/item-shop-2.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
 						  </a>
 						</p>
 						<p>
@@ -77,7 +125,7 @@
 					    </a>
 						<p>
 						  <a href="">
-							<img src="" alt="Гель для волос«SUAVECITO»">
+							<img src="image/item-shop-3.jpg" alt="Гель для волос«SUAVECITO»">
 						  </a>
 						</p>
 						<p>
@@ -95,7 +143,7 @@
 					    </a>
 						<p>
 						  <a href="">
-							<img src="" alt="Глина для укладки волос «American crew»">
+							<img src="image/item-shop-4.jpg" alt="Глина для укладки волос «American crew»">
 						  </a>
 						</p>
 						<p>
@@ -113,7 +161,7 @@
 					    </a>
 						<p>
 						  <a href="">
-							<img src="" alt="Гель для волос «AMERICAN CREW»">
+							<img src="image/item-shop-5.jpg" alt="Гель для волос «AMERICAN CREW»">
 						  </a>
 						</p>
 						<p>
@@ -131,7 +179,7 @@
 					    </a>
 						<p>
 						  <a href="">
-							<img src="" alt="Набор для бритья «Baxter of California»">
+							<img src="image/item-shop-6.jpg" alt="Набор для бритья «Baxter of California»">
 						  </a>
 						</p>
 						<p>
@@ -160,11 +208,13 @@
 		</div>
 		<div>
 			<p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+			
 			<ul>
-				<li><a href=""><img src="" alt="vk-logo"></a></li>
-				<li><a href=""><img src="" alt="facebook-logo"></a></li>
-				<li><a href=""><img src="" alt="instagram-logo"></a></li>
+				<li><a href=""><img src="image/vk.svg" alt="Вконтакте"></a></li>
+				<li><a href=""><img src="image/facebook.svg" alt="Фейсбук"></a></li>
+				<li><a href=""><img src="image/instagram.svg" alt="Инстаграмм"></a></li>
 			</ul>
+			
 		</div>
 		<div>
 			<p>РАЗРАБОТАНО:</p>
@@ -172,11 +222,30 @@
 		</div>
 	</footer>
 	<section>
-		<div>x</div>
-		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-	</section>
-	<section>
-		<div>x</div>
-	</section>
+		<form action="" method="post"> 
+		    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>	
+				<fieldset>
+				   <legend>Введите пожалуйста свой логин и пароль</legend>
+
+				      <label>
+				         Логин
+				         <input type="text" name="login" placeholder="ЛОГИН">
+				      </label>
+
+				      <label>
+				         Пароль
+				          <input type="password" name="password" placeholder="ПАРОЛЬ">
+				      </label>
+
+				      <label>
+				          <input type="checkbox" name="remember-me">
+				          Запомните меня
+				      </label>
+				   <a href="#">Я забыл пароль!</a>	
+				   <button>Войти</button>	
+				   <button aria-label="закрыть">x</button>		    	
+				</fieldset>				
+		</form>		
+	</section>	
 </body>
 </html>
