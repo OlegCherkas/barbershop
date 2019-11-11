@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bordinsky</title>
-	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header text-color">
 		<nav class="main-navigation">
 		   <a href="#"><img src="image/index-logo.svg" width="371px" height="155px" alt="Логотип «БОРОДИНСКИЙ»"></a>
 		   <ul>
@@ -22,9 +24,11 @@
 		</nav>		
 	</header>
 	<main>
-		<h1>Бородинский</h1>
-		<section>
-			<h2 class="visually-hidden">Преимущества</h2>
+		
+		<section class="text-color text-align">
+			<h1>Бородинский</h1>
+
+			<h2>Преимущества</h2>
 			<ul>
 				<li>
 				    <h3>БЫСТРО</h3>
@@ -41,23 +45,33 @@
 			    </ul>
 			
 		</section>
-		<div>
+		<div class="content-wapper">
 			<section>
 				<h3>НОВОСТИ</h3>
+
 				<p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
 				<time>11 января</time>
+
 				<p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
 				<time>18 января</time>
-				<a href="">ВСЕ НОВОСТИ</a>
+
+				<div class="text-color">
+					<a href="">ВСЕ НОВОСТИ</a>
+				</div>
+				
 			</section>
 			<section>
 				<h2>ФОТОГАЛЕРЕЯ</h2>
 				<a href=""><img src="image/studio.jpg" width="286" height="164" alt="ФОТОГАЛЕРЕЯ"></a>
-				<button>НАЗАД</button>
-				<button>ВПЕРЕД</button>
+
+				<div class="text-color">
+					<button>НАЗАД</button>
+				    <button>ВПЕРЕД</button>
+				</div>
+				
 			</section>
 		</div>
-		<div>
+		<div class="content-wapper">
 			<section>
 				<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
 				<div>
@@ -70,14 +84,17 @@
                     <p>ПН—ПТ: С 10:00 ДО 22:00</p>              
                     <p>СБ—ВС: С 10:00 ДО 19:00</p>
 				</div>
-				<button>КАК ПРОЕХАТЬ</button>
-				<button>ОБРАТНАЯ СВЯЗЬ</button>				
+				<div class="text-color">
+					<button>КАК ПРОЕХАТЬ</button>
+				    <button>ОБРАТНАЯ СВЯЗЬ</button>	
+				</div>							
 			</section>
+
 			<section>
 				<h2>ЗАПИСАТЬСЯ</h2>
 				<p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
 
-				<form action="" method="post">
+				<form action="" method="post" class="input-style">
 					<fieldset>
 
 						<label>
@@ -103,11 +120,12 @@
 			</section>
 		</div>
 	</main>
-	<footer>
+	<footer class="text-color backgrounf-footer">	
+
 		<div>
 			<p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
 			<p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
-			<p><a href="">КАК НАС НАЙТИ?</a></p>
+			<p><a href="" class="underline">КАК НАС НАЙТИ?</a></p>
 			<p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
 		</div>
 		<div>
@@ -120,10 +138,11 @@
 		</div>
 		<div>
 			<p>РАЗРАБОТАНО:</p>
-			<p><a href="">html academy</a></p>			
+			<p><a href="">html academy</a></p>		
 		</div>
+
 	</footer>
-	<section>
+	<section class="bubling-form input-style">
 		<form action="" method="post"> 
 		    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>	
 				<fieldset>
@@ -143,9 +162,11 @@
 				          <input type="checkbox" name="remember-me">
 				          Запомните меня
 				      </label>
-				   <a href="#">Я забыл пароль!</a>	
-				   <button>Войти</button>
-				   <button>x</button>		    	
+				      <div class="text-color">
+				      	<a href="#" class="forget-password">Я забыл пароль!</a>	
+				        <button>Войти</button>
+				        <button class="x">x</button>
+				      </div>				   		    	
 				</fieldset>				
 		</form>		
 	</section>	

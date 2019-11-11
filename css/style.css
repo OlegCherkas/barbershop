@@ -1,0 +1,111 @@
+body{
+	background-image: url('../image/big-background.jpg');
+	background-repeat: no-repeat;
+	background-color: #000;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans Narrow', Arial,  sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;	
+}
+
+ul {
+	list-style-type: none;
+}
+p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+
+.text-color,
+.text-color a {	
+	color: #fff;	
+}
+
+.main-navigation a {
+	font-size: 16px;
+	line-height: 20px;
+}
+.text-align li{
+	text-align: center;
+}
+
+.text-align h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.content-wapper,
+.bubling-form {
+	background-color: #f7f4f1;
+	background-image: url(../image/background-block.jpg);
+	background-repeat: repeat;
+}
+
+.bubling-form .forget-password{
+	color: #000;
+	text-decoration: underline;
+}
+
+.content-wapper time {
+	text-transform: none;
+}
+.backgrounf-footer {
+	background-color: #222222;
+	background-image: url('../image/footer-background.jpg');
+	background-repeat: no-repeat;
+}
+
+.backgrounf-footer .underline {
+	text-decoration: underline;
+}
+
+.input-style input[type="text"],
+.input-style input[type="phone"],
+.input-style input[type="password"] {
+	font-style: inherit;
+	font-weight: 700;
+}
+
+.shop-background {
+	background-color: #000;
+	background-image: url('');
+}
+
+.main-navigation a{
+	color: #fff;
+}
+
+.last-element-style a:last-child {
+	color: #fff;
+	background-color: #000;
+}
+
+.bread-crumps a {
+	color: #000;
+}
+
+.bread-crumps li:last-child,
+.article-ae {
+	color: #aba9a7;
+}
+
+.input-text-style {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.x {
+	background: transparent;
+}
